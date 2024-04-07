@@ -1,0 +1,305 @@
+.profile-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+// image
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+}
+
+// Container bleu
+.profile-image-container {
+  background-color: #5387a4;
+  height: 150px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.name-role-updatePicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+//Nom et prenom user
+.name {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  font-weight: bolder;
+  margin-top: -225px;
+}
+
+// button
+.button-plus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0c89ef;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #dddddd;
+}
+
+.upload-button svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.upload-button input[type="file"] {
+  display: none;
+}
+
+// admin
+.profile-value-role {
+  display: flex;
+  justify-content: center;
+  background-color: #0c89ef;
+  border-radius: 2%;
+  color: white;
+  border-radius: 12px;
+}
+
+.profil-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.information-only {
+  width: 200px;
+}
+
+.title-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2dcc8;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  height: 270px;
+}
+
+.add-team {
+  background-color: #e2dcc8;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.add-team-admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 5px;
+}
+
+.profile-section {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.profile-info {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.edit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.team__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #e2dcc8;
+  border-radius: 12px;
+  margin: 10px;
+  min-width: 170px;
+}
+
+.team-modification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.edit-img-team {
+  width: 35px;
+  height: 35px;
+}
+
+.title-profil-list-idea-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-added {
+  text-align: center;
+  margin: 8px;
+}
+
+.add-team {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  max-width: 500px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: #e2dcc8;
+  padding: 5px;
+  margin: 10px;
+}
+
+.addTeamButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.addTeamItem {
+  display: flex;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.edit-team-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #e2dcc8;
+  border-radius: 8px;
+}
+
+.update-team-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.admin-team-btn {
+  border: #a09779 2px solid;
+  border-radius: 5px;
+  width: auto;
+  height: 30px;
+  margin: 8px;
+  color: inherit;
+  padding: 0 5px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: bold;
+}
+
+.newTeam [type="text"] {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.addTeamItem {
+  margin-bottom: 10px;
+}
+.addTeamButton {
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-info-container {
+    flex-direction: column;
+  }
+  .team__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 5px;
+  }
+  .name {
+    font-size: 35px;
+  }
+}

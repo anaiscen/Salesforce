@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap%22");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #07588f;
+  --second-color: #0097fb;
+  --third-color: #afddfc;
+  --text-color-light: #e2efff;
+  --text-color-dark: #0d2d42;
+  --blue-background-color: linear-gradient(
+    210deg,
+    #07588f 0%,
+    #2680be 50%,
+    #0180d4 90%
+  );
+  --white-background-color: linear-gradient(194deg, #c0b89d 0%, #e2dcc8 80%);
+}
+
+.AppHeaderNav {
+  display: block;
+}

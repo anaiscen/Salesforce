@@ -1,0 +1,462 @@
+.listUserContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listUserRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.listUserCards {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  border-radius: 30px 30px 30px 30px;
+  background: var(--white-background-color);
+}
+
+.listUserCardImageContainer {
+  width: 100px;
+  height: 90px;
+}
+
+.listUserCardImage {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.listUserCardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 200px;
+  padding-left: 15px;
+}
+d .listUserCardButtons {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.listUserIconLink,
+.listUserDeleteButton {
+  margin-left: 10px;
+}
+
+.listUserCardName {
+  flex-basis: 100%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: -5px;
+  margin-right: 5px;
+  text-decoration-color: #ccc;
+  position: relative;
+  word-break: break-word;
+}
+
+.listUserCardName,
+.listUserCardDetails > a,
+.listUserCardDetails > button {
+  text-decoration: none;
+  color: black;
+}
+
+.listUserDeleteButton {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.listUserIconUpdate,
+.listUserIconDelete {
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.listUserIcon {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.deleteContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteConfirmation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.deleteConfirmation p {
+  margin-bottom: 10px;
+}
+
+.deleteConfirmationButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.deleteConfirmationButton {
+  margin: 0 10px;
+}
+
+.addUserContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.addUserBlock h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.addUserSection {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 20%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.successMessage {
+  background-color: rgb(105, 179, 86);
+  color: white;
+}
+
+.addUserForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.title-edit-user-newComp {
+  margin-top: 50px;
+}
+
+.addUserFormLAbel {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.addUserFormInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.signup-invalid {
+  display: block;
+  color: rgb(218, 11, 11);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.signup-hide {
+  display: none;
+}
+
+.addUserFormButton {
+  margin-left: 300px;
+  margin-right: 300px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .addUserSection {
+    margin-top: 100px;
+  }
+
+  .addUserForm {
+    margin-top: 60px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 50px;
+  }
+
+  .addUserFormButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .addUserSection {
+    width: 90%;
+  }
+
+  .addUserForm {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .addUserButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.editUserContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+  margin-bottom: 50px;
+  min-height: 600px;
+}
+
+.editUserBlock h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.editUserSection {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 20%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.editUserForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.editUserFormLabel {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.editUserFormInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.editUserButton {
+  margin-left: 300px;
+  margin-right: 300px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.editUserButton:hover {
+  background-color: #0062cc;
+}
+
+@media only screen and (max-width: 600px) {
+  .editUserSection {
+    margin-top: 100px;
+  }
+
+  .editUserForm {
+    margin-top: 60px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 50px;
+  }
+
+  .editUserButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .editUserSection {
+    width: 90%;
+  }
+
+  .editUserForm {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .editUserButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+//// Add fisrt user
+
+.addFUContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2px;
+  padding-left: px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+  margin-bottom: 50px;
+  justify-content: center;
+  min-height: 650px;
+}
+
+.option-company {
+  color: var(--text-color-dark);
+}
+
+.addFULabelSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+  position: absolute;
+}
+
+.addFUContainer h3 {
+  font-size: 1, 2rem;
+  text-align: center;
+  padding-top: -50px;
+  margin-bottom: -30px;
+}
+
+.addFUSection {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 85vh;
+  justify-content: center;
+  height: auto;
+}
+
+.labelStyle {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.selectStyle {
+  width: 250px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.addFTCloseButton {
+  background: "transparent";
+  border: "none";
+  cursor: "pointer";
+}
+
+@media only screen and (max-width: 400px) {
+  .addFUContainer {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .addFULabelSection {
+    position: relative;
+    height: auto;
+  }
+
+  .addFUContainer h3 {
+    font-size: 1rem;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .addFUSection {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: auto;
+  }
+
+  .selectStyle {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .addFUContainer {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .addFULabelSection {
+    position: relative;
+    height: auto;
+  }
+
+  .addFUContainer h3 {
+    font-size: 1rem;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .addFUSection {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: auto;
+  }
+
+  .selectStyle {
+    width: 100%;
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,123 @@
+.idea-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 300px;
+  margin-bottom: 50px;
+}
+
+.btn-new-idea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 80vw;
+  height: 50px;
+  padding-left: 10px;
+  margin: 35px 0 10px 0;
+  border-radius: 8px;
+  background: var(--blue-background-color);
+  color: var(--text-color-light);
+  border: rgb(68, 68, 68) 3px solid;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.idea-global-content {
+  min-height: 680px;
+}
+
+.idea-list-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+
+  &__btn {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.5rem;
+    width: 80vw;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 8px;
+    background: var(--blue-background-color);
+    color: var(--text-color-light);
+    border: rgb(68, 68, 68) 3px solid;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  &__img-idea {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .btn-new-idea {
+    justify-content: center;
+    width: 35vw;
+  }
+
+  .idea-list {
+    margin-bottom: 100px;
+  }
+
+  .idea-list-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    &__link {
+      height: 250px;
+      width: 340px;
+      border-radius: 8px;
+      border: rgb(77, 80, 90) 2px solid;
+      box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &__btn {
+      width: 100%;
+      text-align: center;
+      border-radius: 0px 0px 8px 8px;
+      border: none;
+      box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &__img-idea {
+      display: block;
+      background-color: aquamarine;
+      width: 100%;
+      max-height: 80%;
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-new-idea {
+    justify-content: center;
+    width: 20vw;
+    margin-top: 50px;
+  }
+
+  .idea-list-content {
+    &__link {
+      height: 220px;
+      width: 320px;
+    }
+  }
+}

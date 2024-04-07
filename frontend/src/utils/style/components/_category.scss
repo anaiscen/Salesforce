@@ -1,0 +1,125 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-padding-left: 85px;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.category-container {
+  width: auto;
+  min-width: 100px;
+  min-height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.12rem;
+  margin: 5px;
+  background: var(--white-background-color);
+  color: var(--text-color-dark);
+  border: rgb(68, 68, 68) 1px solid;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.category-btn {
+  width: 100%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.btn-category-admin {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-category {
+  &-edit {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  &-delete {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+}
+
+.delete-img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.form-edit-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-input {
+    margin: 10px;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &-btn {
+      margin: 0 5px;
+    }
+  }
+}
+
+.add-category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin-top: 40px;
+
+  &-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &-btn {
+    padding: 5px 10px;
+    color: var(--text-color-light);
+    background: var(--blue-background-color);
+    border-radius: 5px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .menu {
+    justify-content: center;
+
+    &-Categoybar-li {
+      margin: 20px 40px 0 40px;
+    }
+  }
+
+  .category-btn {
+    width: 120px;
+  }
+}

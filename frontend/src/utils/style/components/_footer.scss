@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #07588f;
+  color: white;
+  padding: 20px 0;
+  a {
+    margin-bottom: 10px;
+    color: white;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  &__policies {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
+    &__title {
+      margin: 10px 0;
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
+}
